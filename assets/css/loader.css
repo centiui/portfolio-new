@@ -1,0 +1,82 @@
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000718;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    background-image: url("../img/logoalt.png");
+    background-size: cover;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    animation: loader 2s infinite ease-in;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #1156FF;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1 !important;
+    animation: fade-up 0.5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+
+    25% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+
+    75% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0%;
+    }
+}
