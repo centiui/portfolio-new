@@ -9,15 +9,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/general.css">
     <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/typewriter.css">
     <link rel="icon" type="image/x-icon" href="assets/img/translogo.ico">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top headerauto">
+        <nav class="navbar navbar-expand-lg fixed-top headerauto" id="navbar">
             <div class="container">
-                <a class="nav-logo" href=""><img class="nav-logo" src="assets/img/mainlogo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="nav-logos" href="" class="d-flex">
+                
+                <img class="nav-logo" src="assets/img/logoalt2.svg" alt="">
+                <div class="nav-text">centi<span class="blue typewriter"></span></div>
+            </a>
+                <button class="navbar-toggler" onclick="changeBg()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="iconify text-white" data-icon="material-symbols:menu"></span>
                 </button>
 
@@ -49,7 +54,8 @@
                 <div class="row">
                     <div class="col-xl-8">
                         <h1 class="hero-title">Custom websites, designs, and ads.</h1>
-                        <h2 class="hero-description">Tailored for your business.</h2>
+                        <h2 class="hero-description">Tailored for your business. </h2>
+                        
                         <div class="hero-btns mt-5">
                             <a href="" class="btn btn-primary btn-lg">Get a Quote <span class="iconify" data-icon="material-symbols:keyboard-arrow-down" data-rotate="270deg"></span></a> <a href="" class="btn btn-secondary btn-lg">Services <span class="iconify" data-icon="material-symbols:keyboard-arrow-down"></span></a>
                         </div>
@@ -58,7 +64,7 @@
                         
                         <div class="wrapper">
                             <div id="scene">
-                            <img data-depth="2.0" src="assets/img/atimg.png" class="hero-img" width="20%" alt="">
+                            <img data-depth="2.0" src="assets/img/atimg.png" class="hero-img atimg" width="20%" alt="">
                             <img data-depth="3.0" src="assets/img/compimg.png" class="hero-img compimg" width="100%" alt="">
                             </div>
                         </div>
@@ -108,7 +114,12 @@
             const hiddenElements = document.querySelectorAll('.hidden');
             hiddenElements.forEach((el) => observer.observe(el));
         </script>
-        
+        <script>
+            function changeBg() {
+                var header = document.querySelector("nav");
+                header.classList.toggle("stickyauto");
+            }
+        </script>
     </footer>
 </body>
 
