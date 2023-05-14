@@ -33,6 +33,7 @@
         opacity: 0;
         transform: translateY(-20px) scale(0.9);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0px) scale(1);
@@ -45,6 +46,7 @@
         opacity: 0;
         transform: translateY(-20px) scale(1);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0px) scale(1);
@@ -70,7 +72,11 @@
     }
 }
 
-@media only screen and (max-width: 432px) {
+@media only screen and (max-width:500px) {
+    .hero {
+        background-size: 275% !important;
+    }
+
     .navbar {
         background-color: #000718 !important;
     }
@@ -84,13 +90,22 @@
         width: 50% !important;
     }
 
+    .hero-padding {
+        padding-top: 7rem !important;
+    }
     .hero-title {
-        font-size: 25px !important;
+        
+        font-size: 32px !important;
+    }
+
+    .hero-description {
+        font-size: 22px !important;
     }
 }
 
 body {
     background-color: #000718;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -99,7 +114,7 @@ body {
     background-image: url("../img/herobg.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
 
 .navbar {
@@ -107,6 +122,7 @@ body {
     animation: fade-down 0.5s;
     display: none;
 }
+
 .nav-link {
     color: #fff !important;
     font-family: "MadeThin";
@@ -120,24 +136,24 @@ body {
 
 .btn-secondary {
     background-color: #000C28;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 2px solid #1156FF;
     transition: 0.2s ease-in-out;
 
     font-family: "MadeThin";
-    
+
 }
 
 .btn-secondary:hover {
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: #000C28;
     border: 2px solid #1156FF;
     color: white;
 }
 
 .btn-primary {
-    background: linear-gradient(#1156FF 1.46%, #144ac7 100%);
-    border-radius: 10px;
+    background: #1156FF;
+    border-radius: 15px;
     border: 2px solid #1156FF;
     transition: 0.2s ease-in-out;
 
@@ -145,8 +161,8 @@ body {
 }
 
 .btn-primary:hover {
-    background: linear-gradient(#1156FF 1.46%, #144ac7 100%);
-    border-radius: 15px;
+    background-color: #1156FF;
+    border-radius: 20px;
     border: 2px solid #1156FF;
     color: white;
 }
@@ -164,12 +180,12 @@ body {
 }
 
 .headerauto {
-    transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.3s;
 }
 
 .stickyauto {
-    background-color: rgba(0, 7, 24, 0.7) !important;
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 7, 24, 0.8) !important;
+    backdrop-filter: blur(16px);
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -178,27 +194,44 @@ body {
     animation: fade-up 1.2s;
 }
 
+.hero-padding {
+    padding-top: 17rem;
+}
+
 .hero-title {
-    padding-top: 15rem;
+
     font-family: "MadeMed";
     background: linear-gradient(142.39deg, #FFFFFF 19.11%, rgba(255, 255, 255, 0.5) 99.3%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-
     font-size: 75px;
     animation: fade-down 0.8s;
 }
 
+@keyframes typewriter {
+    from {
+        width: 0
+    }
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
 .hero-description {
-    font-family: "MadeReg";
+    font-family: "MadeThin";
     background: linear-gradient(142.39deg, #FFFFFF 19.11%, rgba(255, 255, 255, 0.5) 99.3%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    position: relative;
     text-fill-color: transparent;
     animation: fade-up 1s;
+    width: 100%;
+    white-space: nowrap;
+    animation: typewriter 1s steps(100) 1s 1 normal both, fade-down 0.8s;
 }
 
 .portfolio {
@@ -208,7 +241,7 @@ body {
 }
 
 .portfolio-header {
-    padding-top:3rem;
+    padding-top: 3rem;
     font-size: 60px;
     font-family: "MadeMed";
 
@@ -231,6 +264,19 @@ body {
 }
 
 .portfolio-btn {
-    margin-top:2rem;
-    margin-bottom:4rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.blue {
+    background: linear-gradient(142.39deg, #1156FF 19.11%, #144ac7 99.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+
+.compimg {
+    float: right !important;
 }

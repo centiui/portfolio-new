@@ -17,17 +17,8 @@
     width: 75px;
     height: 75px;
     position: relative;
-    animation: loader 2s infinite ease-in;
+    animation: loader 2s infinite ease-in-out;
 }
-
-.loader-inner {
-    vertical-align: top;
-    display: inline-block;
-    width: 100%;
-    background-color: #1156FF;
-    animation: loader-inner 2s infinite ease-in;
-}
-
 .hidden {
     opacity: 0;
 }
