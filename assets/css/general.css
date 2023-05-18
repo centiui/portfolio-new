@@ -49,7 +49,7 @@
 @keyframes fade-up {
     0% {
         opacity: 0;
-        transform: translateY(-20px) scale(1);
+        transform: translateY(-20px) scale(0.9);
     }
 
     100% {
@@ -71,11 +71,52 @@
     }
 }
 
-@media only screen and (max-width: 960px) {
-    .navbar {
-        background-image: linear-gradient(rgba(0, 7, 24, 0.6), rgba(0, 7, 24, 0)) !important;
+@keyframes moveImg {
+    0% {
+        margin-top: 0;
     }
 
+    25% {
+        margin-top: -10px;
+    }
+
+    50% {
+        margin-top: 0px;
+    }
+
+    75% {
+        margin-top: -10px;
+    }
+
+    200% {
+        margin-top: 0px;
+    }
+}
+
+
+@keyframes moveImg2 {
+    0% {
+        margin-top: 0;
+    }
+
+    25% {
+        margin-top: -15px;
+    }
+
+    50% {
+        margin-top: 0px;
+    }
+
+    75% {
+        margin-top: -15px;
+    }
+
+    200% {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
     .quotebtn {
         margin-top: 15px;
         margin-left: 0 !important;
@@ -90,13 +131,23 @@
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1200px) {
     .wrapper {
         display: none;
     }
+    .portfolio-img {
+        width: 40%;
+    }
+    #earth {
+        display: none !important;
+    }
+    .chead {
+        padding-left: 0 !important;
+        padding-top: 0 !important;
+    }
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:370px) {
     .hero {
         background-size: 275% !important;
     }
@@ -126,20 +177,85 @@
     .hero-description {
         font-size: 22px !important;
     }
+
+    .btn-secondary {
+        margin-top:5px;
+    }
+
+    
 }
+
+@media only screen and (max-width: 500px) {
+    .portfolio-title {
+        font-size: 32px !important;
+    }
+
+    .portfolio-padd {
+        padding-left: 0 !important;
+    }
+
+    .portfolio-img {
+        width: 60% !important;
+    }
+    .portfolio-desc {
+        font-size: 18px !important;
+    }
+}
+
+#earth {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background: transparent url("../img/world.png");
+	background-size: cover;
+	box-shadow: inset 0px -20px 50px 10px #1156FF,
+        0px 0px 30px 6px #1156FF;
+	transform-style: preserve-3d;
+	transform: rotate(20deg);
+	animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: 530px 0;
+	}
+}
+
 
 body {
     background-color: #000718;
     overflow-x: hidden;
 }
 
+.snap-section {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snap {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
 .hero {
     width: 100%;
-    height: 1071px;
+    height: 100vh;
     background-image: url("../img/herobg.svg");
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar {
@@ -168,33 +284,6 @@ body {
     font-family: "MadeThin";
 
 }
-
-
-
-@keyframes moveX {
-    0% {
-        margin-top: 0;
-    }
-
-    25% {
-        margin-top: 3px;
-    }
-
-    50% {
-        margin-top: 0px;
-    }
-
-    75% {
-        margin-top: -3px;
-    }
-
-    200% {
-        margin-top: 0px;
-    }
-}
-
-
-
 
 .btn-secondary:hover {
     border-radius: 20px;
@@ -287,8 +376,10 @@ a:active {
     animation: fade-up 1.2s;
 }
 
-.hero-padding {
-    padding-top: 17rem;
+.hero-small {
+ font-size: 15px;
+ font-family: "MadeThin";
+ color:#1156FF;
 }
 
 .hero-title {
@@ -349,13 +440,18 @@ a:active {
 
 .portfolio-description {
     font-size: 45px;
-    font-family: "MadeLight";
+    font-family: "MadeMed";
+    font-weight: bold;
 
     background: linear-gradient(142.39deg, #FFFFFF 19.11%, rgba(255, 255, 255, 0.5) 99.3%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+}
+
+h2 {
+    font-family: "MadeThin";
 }
 
 .portfolio-btn {
@@ -371,51 +467,6 @@ a:active {
     text-fill-color: transparent;
 }
 
-@keyframes moveImg {
-    0% {
-        margin-top: 0;
-    }
-
-    25% {
-        margin-top: -10px;
-    }
-
-    50% {
-        margin-top: 0px;
-    }
-
-    75% {
-        margin-top: -10px;
-    }
-
-    200% {
-        margin-top: 0px;
-    }
-}
-
-
-@keyframes moveImg2 {
-    0% {
-        margin-top: 0;
-    }
-
-    25% {
-        margin-top: -15px;
-    }
-
-    50% {
-        margin-top: 0px;
-    }
-
-    75% {
-        margin-top: -15px;
-    }
-
-    200% {
-        margin-top: 0px;
-    }
-}
-
 .atimg {
     animation: moveImg2 5s infinite ease-in-out;
 }
@@ -425,12 +476,16 @@ a:active {
     animation: moveImg 11000ms infinite ease-in-out;
 }
 
+.portfolio-img {
+    align-items: center;
+}
+
 .col-padding {
     padding: 2rem;
 }
 
 .card {
-    background-image: url("../img/bgcard.png");
+    background-image: url("../img/cardbg.png");
     background-size: cover;
     border: 0 !important;
     background-color: #000C28;
@@ -443,6 +498,12 @@ a:active {
     
 }
 
+.chead {
+    font-size: 15px;
+    font-family: "MadeThin";
+    padding: 1rem;
+}
+
 .card-img {
     border:#1156FF 0px solid;
     border-radius: 10px;
@@ -450,4 +511,47 @@ a:active {
 
 .card-desc {
     font-size: 20px;
+}
+
+.portfolio-title {
+    font-family: "MadeMed";
+    background: linear-gradient(142.39deg, #FFFFFF 19.11%, rgba(255, 255, 255, 0.199) 99.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 60px;
+    padding-top: 2rem;
+}
+
+.portfolio-desc {
+    font-family: "MadeThin";
+    background: linear-gradient(142.39deg, #FFFFFF 19.11%, rgba(255, 255, 255, 0.199) 99.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 30px;
+}
+
+.portfolio-padd {
+    padding-left: 2rem;
+}
+
+ul {list-style: none}
+
+.list::before {content: "•"; color: #1156FF;
+    display: inline-block; width: 1em;
+    margin-left: -1em}
+
+.test-desc {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.pricing-desc {
+    font-family: "MadeMed";
+    font-size: 45px;
+    color: #1156FF;
 }

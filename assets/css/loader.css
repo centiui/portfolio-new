@@ -27,14 +27,39 @@
     opacity: 0;
 }
 
+.hiddentilt {
+    opacity: 0;
+}
+
+
+
+.hiddenup {
+    opacity: 0;
+}
+
 .show {
     opacity: 1 !important;
     animation: fade-up 1s;
 }
 
-.showtype {
+
+.showtilt {
     opacity: 1 !important;
-    animation: typewriter 2s steps(100) 1s 1 normal both;
+    animation: tiltImg 1000ms ease-in-out;
+}
+
+.showup {
+    opacity: 1 !important;
+    animation: fade-down 1000ms;
+}
+
+@keyframes tiltImg {
+    0% {
+        rotate: 10deg;
+    }
+    100% {
+        rotate: 0deg;
+    }
 }
 
 @keyframes loader {
