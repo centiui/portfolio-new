@@ -46,6 +46,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#testimonials">Testimonials</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
                         <li class="nav-item quotebtn">
                             <a class="btn btn-secondary" href="#">Get a Quote</a>
                         </li>
@@ -61,18 +64,21 @@
                     <div class="container hero-padding">
                         <div class="row">
                             <div class="col-xl-8">
-                                <h4 class="hero-small"><span class="badge bg-primary fa-fade">LIVE <i class="fa-solid fa-location-dot"></i></span> <span class="Single">853712</span>+ visitors on our client's sites  </h4>
+                                <h4 class="hero-small "><span class="badge bg-primary "><i class="fa-solid fa-star fa-fade"></i><i class="fa-solid fa-star fa-fade"></i><i class="fa-solid fa-star fa-fade"></i><i class="fa-solid fa-star fa-fade"></i><i class="fa-solid fa-star fa-fade"></i></span> - Our average client rating (10+)</h4>
                                 <h1 class="hero-title">Custom websites, designs, and ads.</h1>
                                 <h2 class="hero-description">Tailored for your business. </h2>
 
                                 <div class="hero-btns mt-5">
-                                    <a href="" class="btn btn-primary btn-lg">Get a Quote <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="material-symbols:keyboard-arrow-down" data-rotate="270deg" class="iconify iconify--material-symbols">
+
+                                    <a href="/portfolio" class="btn btn-primary btn-lg">Our Portfolio <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="material-symbols:keyboard-arrow-down" data-rotate="270deg" class="iconify iconify--material-symbols">
                                             <g transform="rotate(-90 12 12)">
                                                 <path fill="currentColor" d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4l-6 6Z"></path>
                                             </g>
                                         </svg></a>
-
-                                    <a href="" class="btn btn-secondary btn-lg">Services <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="material-symbols:keyboard-arrow-down" class="iconify iconify--material-symbols">
+                                    <a href="#contact" class="btn btn-secondary btn-lg">Contact Us <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="material-symbols:keyboard-arrow-down" class="iconify iconify--material-symbols">
+                                            <path fill="currentColor" d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4l-6 6Z"></path>
+                                        </svg></a>
+                                    <a href="#services" class="btn btn-secondary btn-lg">Services <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="material-symbols:keyboard-arrow-down" class="iconify iconify--material-symbols">
                                             <path fill="currentColor" d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4l-6 6Z"></path>
                                         </svg></a>
 
@@ -104,7 +110,7 @@
                             <div class="portfolio-padd">
                                 <h1 class="portfolio-title hidden">Now for the important stuff.</h1>
                                 <h2 class="portfolio-desc hidden">Dozens of project specially designed for our previous clients.</h2>
-                                <a class="btn btn-secondary mt-3 btn-lg" href="">See Our Work <span class="iconify" data-icon="ic:round-skip-next"></span></a>
+                                <a class="btn btn-primary hiddenup mt-3 btn-lg" href="/portfolio">See Our Work <span class="iconify" data-icon="ic:round-skip-next"></span></a>
                             </div>
                         </div>
                     </div>
@@ -121,14 +127,15 @@
                                         <div class="card mt-4 hidden">
                                             <div class="card-body">
                                                 <div class="chead d-flex align-items-center">
-                                                    <img src="assets/img/crown.png" width="35px">&ensp; Web Development
+                                                    <img src="assets/img/code.png" width="35px">&ensp; Web Development
                                                 </div>
                                                 <ul>
-                                                    <li class="list">Low pricing</li>
-                                                    <li class="list">Quality work</li>
-                                                    <li class="list">1 free UI sketch</li>
-                                                    <li class="list">Mockups</li>
-                                                    <li class="list">Portfolio available</li>
+                                                <li class="list"><i class="fa-solid text-danger fa-heart"></i>  Crafted with Care</li>
+                                                    <li class="list"><i class="fa-solid text-warning fa-star"> 5</i>  Portfolio Available</li>
+                                                    <li class="list">Visualize your website with no cost</li>
+                                                    <li class="list">Flexible packages to fit your budget</li>
+                                                    <li class="list">Value-driven work quality</li>
+                                                    
                                                 </ul>
                                             </div>
                                         </div>
@@ -137,14 +144,13 @@
                                         <div class="card mt-4 hiddenup">
                                             <div class="card-body">
                                                 <div class="chead d-flex align-items-center">
-                                                    <img src="assets/img/crown.png" width="35px">&ensp; UI/UX Design
+                                                    <img src="assets/img/xd.png" width="35px">&ensp; UI/UX Design
                                                 </div>
                                                 <ul>
-                                                    <li class="list">Low pricing</li>
-                                                    <li class="list">Quality work</li>
-                                                    <li class="list">1 free UI sketch</li>
-                                                    <li class="list">Mockups</li>
-                                                    <li class="list">Portfolio available</li>
+                                                    <li class="list">Putting the user at the heart <i class="fa-solid text-danger fa-heart"></i> of every decision.</li>
+                                                    <li class="list">Immersive, intuitive digital experiences</li>
+                                                    <li class="list">Tailored solutions to fit your budget</li>
+                                                    <li class="list">Mockups: Content & creation</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -174,14 +180,17 @@
                                         <div class="card mt-4 hidden">
                                             <div class="card-body">
                                                 <div class="chead d-flex align-items-center">
-                                                    <img src="assets/img/crown.png" width="35px">&ensp; Advertisements
+                                                    <img src="assets/img/megaphone.png" width="35px">&ensp; Advertisements
                                                 </div>
                                                 <ul>
-                                                    <li class="list">Low pricing</li>
-                                                    <li class="list">Quality work</li>
-                                                    <li class="list">1 free UI sketch</li>
-                                                    <li class="list">Mockups</li>
-                                                    <li class="list">Portfolio available</li>
+                                                    <li class="list"><i class="fa-solid fa-circle fa-fade text-primary"></i> Eye-catching advertisements that convert</li>
+                                                    <li class="list">Tailored for your needs</li>
+                                                    <li class="list">Multiple social media platforms</li>
+                                                    <i class="fa-brands fa-instagram fa-fade text-primary fa-xl" style="--fa-animation-delay: 0"></i>
+                                                    <i class="fa-brands fa-tiktok fa-fade text-primary fa-xl" style="--fa-animation-delay: 0.1s"></i>
+                                                    <i class="fa-brands fa-twitter fa-fade text-primary fa-xl" style="--fa-animation-delay: 0.2s"></i>
+                                                    <i class="fa-brands fa-reddit fa-fade text-primary fa-xl" style="--fa-animation-delay: 0.3s"></i>
+                                                    <i class="fa-brands fa-facebook fa-fade text-primary fa-xl" style="--fa-animation-delay: 0.4s"></i>
                                                 </ul>
                                             </div>
                                         </div>
@@ -190,14 +199,13 @@
                                         <div class="card mt-4 hiddenup">
                                             <div class="card-body">
                                                 <div class="chead d-flex align-items-center">
-                                                    <img src="assets/img/crown.png" width="35px">&ensp; Discord Development
+                                                    <img src="assets/img/crown.png" width="35px">&ensp; Website Maintenance
                                                 </div>
                                                 <ul>
-                                                    <li class="list">Low pricing</li>
-                                                    <li class="list">Quality work</li>
-                                                    <li class="list">1 free UI sketch</li>
-                                                    <li class="list">Mockups</li>
-                                                    <li class="list">Portfolio available</li>
+                                                    <li class="list">Continuous care for your digital presence</li>
+                                                    <li class="list">100% Performance</li>
+                                                    <li class="list">600ms Load times</li>
+                                                    <li class="list">24/7 support</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -274,7 +282,30 @@
                 </div>
             </section>
 
+            <section class="snap-section" id="contact">
+                <div class="container">
+                    <div class="portfolio-padd">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card mt-4 hidden">
+                                    <div class="card-body text-center">
+                                        <div class="portfolio-title">  
+                                        Ready to upgrade?</div>
+                                        <div class="portfolio-desc">  
+                                        We can help!</div>
 
+                                        <a href="https://www.instagram.com/centiui/" class="contactbtn btn text-primary btn-lg mt-3 mb-5"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                                        <a href="https://github.com/centiui" class="contactbtn btn text-primary btn-lg mt-3 mb-5"><i class="fa-brands fa-github fa-2xl"></i></a>
+                                        <a href="discordapp.com/users/1042936842275786865" class="contactbtn btn text-primary btn-lg mt-3 mb-5"><i class="fa-brands fa-discord fa-2xl"></i></a>
+                                        <a href="mailto:centidev@protonmail.ch" class="contactbtn btn text-primary btn-lg mt-3 mb-5"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
         </div>
 
@@ -288,94 +319,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" integrity="sha512-/6TZODGjYL7M8qb7P6SflJB/nTGE79ed1RfJk3dfm/Ib6JwCT4+tOfrrseEHhxkIhwG8jCl+io6eaiWLS/UX1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js" integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script>
-            var scene = document.getElementById('scene');
-            var parallax = new Parallax(scene);
-        </script>
-        <script>
-            document.querySelector('.snap').addEventListener("scroll", onScroll, function() {
-                var header = document.querySelector("nav");
-                header.classList.toggle("stickyauto", window.scrollY > 0);
-            })
-        </script>
-        <script>
-            $(window).on("load", function() {
-                $(".loader-wrapper").fadeOut("slow");
-                $(".navbar").fadeIn("fast");
-            });
-
-
-            $({
-                Counter: 0
-            }).animate({
-                Counter: $('.Single').text()
-            }, {
-                duration: 1000,
-                easing: 'swing',
-                step: function() {
-                    $('.Single').text(Math.ceil(this.Counter));
-                }
-            });
-        </script>
-        <script>
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    console.log(entry);
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('show');
-                    } else {
-                        entry.target.classList.remove('show');
-                    }
-                });
-            });
-
-
-            const hiddenElements = document.querySelectorAll('.hidden');
-            hiddenElements.forEach((el) => observer.observe(el));
-
-            const observer2 = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    console.log(entry);
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('showtilt');
-                    } else {
-                        entry.target.classList.remove('showtilt');
-                    }
-                });
-            });
-
-
-            const hiddenElements2 = document.querySelectorAll('.hiddentilt');
-            hiddenElements2.forEach((el) => observer2.observe(el));
-
-            const observer3 = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    console.log(entry);
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('showup');
-                    } else {
-                        entry.target.classList.remove('showup');
-                    }
-                });
-            });
-
-
-            const hiddenElements3 = document.querySelectorAll('.hiddenup');
-            hiddenElements3.forEach((el) => observer3.observe(el));
-        </script>
-        <script>
-            function changeBg() {
-                var header = document.querySelector("nav");
-                header.classList.toggle("stickyauto");
-            }
-        </script>
-        <script>
-            $('.js-tilt').tilt({
-                scale: 1.2,
-                glare: true,
-                maxGlare: .5
-            })
-        </script>
+        <script src="assets/js/anim.js" type="text/javascript"></script>
+        <script src="assets/js/nav.js" type="text/javascript"></script>
+        <script src="assets/js/scene.js" type="text/javascript"></script>
+        <script src="assets/js/snap.js" type="text/javascript"></script>
+        <script src="assets/js/jquery.js" type="text/javascript"></script>
     </footer>
 </body>
 

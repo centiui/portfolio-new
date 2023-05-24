@@ -178,9 +178,7 @@
         font-size: 22px !important;
     }
 
-    .btn-secondary {
-        margin-top:5px;
-    }
+    
 
     
 }
@@ -199,6 +197,9 @@
     }
     .portfolio-desc {
         font-size: 18px !important;
+    }
+    .btn {
+        margin-top:5px;
     }
 }
 
@@ -226,6 +227,17 @@
 	}
 }
 
+@keyframes spinaround {
+    0% {
+        rotate: 0deg;
+    }
+    50% {
+        rotate: 180deg;
+    }
+    100% {
+        rotate: 0deg;
+    }
+}
 
 body {
     background-color: #000718;
@@ -554,4 +566,8 @@ ul {list-style: none}
     font-family: "MadeMed";
     font-size: 45px;
     color: #1156FF;
+}
+
+.contactbtn:hover {
+    animation: 0.5s spinaround ease-in-out;
 }
