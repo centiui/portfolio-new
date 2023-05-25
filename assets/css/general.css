@@ -201,6 +201,10 @@
     .btn {
         margin-top:5px;
     }
+
+    .card-port {
+        width: 90% !important;
+    }
 }
 
 #earth {
@@ -504,6 +508,12 @@ h2 {
     border-radius: 10px;
 }
 
+.card-port {
+    background: transparent;
+    border: 0 !important;
+    width: 55%;
+}
+
 .card-body {
     font-family: "MadeThin";
     color: #fff;
@@ -570,4 +580,21 @@ ul {list-style: none}
 
 .contactbtn:hover {
     animation: 0.5s spinaround ease-in-out;
+}
+
+.siteimg {
+    border: 1px solid #000718;
+    border-radius: 30px;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+  }
+
+.footerul > li {
+    font-family: 'MadeLight';
+    color:#1156FF ;
+    line-height: 200%;
 }
