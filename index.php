@@ -53,7 +53,7 @@ include 'inc/header.php';
                     <div class="col-xl-7 ">
                         <div class="portfolio-padd">
                             <h1 class="portfolio-title hidden">Now for the important stuff.</h1>
-                            <h2 class="portfolio-desc hidden">Dozens of project specially designed for our previous clients.</h2>
+                            <h2 class="portfolio-desc hidden">Dozens of projects specially designed for our previous clients.</h2>
                             <a class="btn btn-primary hiddenup mt-3 btn-lg" href="/portfolio">See Our Work <span class="iconify" data-icon="ic:round-skip-next"></span></a>
                         </div>
                     </div>
